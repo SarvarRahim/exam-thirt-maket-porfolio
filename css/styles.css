@@ -154,6 +154,10 @@ img {
   margin-bottom: 32px;
 }
 
+.sitenav__item--active {
+  color: var(--primary-slightly);
+}
+
 .sitenav__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -279,7 +283,15 @@ img {
   text-decoration: none;
   border: 1px solid var(--primary-grayish);
   margin-top: 24px;
+  transition: background-color 0.3s ease,
+  color 0.3s ease;
 }
+
+.about__link:hover {
+  background-color: var(--primary-grayish);
+  color: var(--color-white);
+}
+
 .about-img {
   object-fit: cover;
   display: block;
@@ -685,6 +697,7 @@ input:not(:placeholder-shown):not(:focus):valid {
 
 
 @media only screen and (min-width: 1100px) {
+
   .site-hero__content::before {
     background-image: url("../img/hero-bg-laptop.jpg");
   }
