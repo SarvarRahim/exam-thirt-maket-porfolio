@@ -4,12 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio Contact</title>
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
   <header class="site-header">
     <div class="container">
       <div class="site-header__content">
@@ -22,7 +21,7 @@
         <nav class="sitenav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Home</a>
+              <a class="sitenav__link" href="index.html">Home</a>
             </li>
             <li class="sitenav__item">
               <a class="sitenav__link" href="#">Porfolio</a>
@@ -36,55 +35,62 @@
     </div>
   </header>
 
-  <h1 class="visually-hidden">My Porfolio</h1>
+  <div class="contact-hero">
+    <div class="container-content container">
+      <div class="contact-hero__wrapper">
+        <h1 class="contact-hero__title">Get in Touch</h1>
+      <p class="contact-hero__desc">I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a hard-working and positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my online profiles below and get in touch using the form.</p>
+      </div>
+      <ul class="contact-social__list">
+        <li class="contact-social__item">
+          <a class="contact-social__link" href="github.com">
+            <img class="contact-social__icon" src="img/git-dark.svg" alt="logo GitHub" width="25" height="25">
+          </a>
+        </li>
+        <li class="contact-social__item">
+          <a class="contact-social__link" href="twitter.com">
+            <img class="contact-social__icon" src="img/twitter-dark.svg" alt="logo GitHub" width="25" height="20">
+          </a>
+        </li>
+        <li class="contact-social__item">
+          <a class="contact-social__link" href="linkedin.com">
+            <img class="contact-social__icon" src="img/linkedin-dark.svg" alt="logo GitHub" width="25" height="25">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
-  <section class="site-hero">
+  <section class="contact">
     <div class="container">
-      <div class="site-hero__content">
-        <div class="site-hero__text">
-          <h2 class="site-hero__title">Hey, I’m Alex Spencer and I love building beautiful websites</h2>
-          <a class="site-hero__link" href="#about">About me</a>
+      <div class="contact__inner">
+        <h2 class="contact__head">Contact me</h2>
+        <div class="contact-form">
+          <form action="https://echo.htmlacademy.ru" class="contact-form__group">
+
+            <div class="contact-input__wrapper">
+              <span class="contact-label">Name</span>
+              <input class="contact-input" type="text" name="Name" minlength="2" placeholder="Jane Appleseed">
+              <span class="error-input">This field is required</span>
+            </div>
+
+           <div class="contact-input__wrapper">
+             <span class="contact-label">Email Address</span>
+              <input class="contact-input" type="email" name="Email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"  placeholder="email@example.com">
+              <span class="error-input">This field is required</span>
+            </div>
+
+            <div class="contact-input__wrapper">
+              <span class="contact-label">Message</span>
+              <textarea class="contact-input" name="comment" rows="5" placeholder="How can I help?"></textarea>
+            </div>
+
+            <button class="contact-sbm" type="submit" aria-label="submit form">send Message</button>
+          </form>
         </div>
       </div>
     </div>
   </section>
-  <main class="site-content">
-
-    <section class="about">
-      <div class="container">
-        <div class="about-content">
-          <picture>
-            <source srcset="img/avatar-about-desktop.webp 1x, img/avatar-about-desktop@2x.webp 2x"
-            media="(min-width:1100px)"
-            type="image/webp">
-            <source srcset="img/avatar-about-desktop.jpg 1x, img/avatar-about-desktop@2x.jpg 2x"
-            media="(min-width:1100px)">
-            <source srcset="img/avatar-about-tablet.webp 1x, img/avatar-about-tablet@2x.webp 2x"
-            media="(min-width:768px)"
-            type="image/webp">
-            <source srcset="img/avatar-about-tablet.jpg 1x, img/avatar-about-tablet@2x.jpg 2x"
-            media="(min-width:768px)">
-            <img class="about-img" src="img/about-bg-img-human-mobile.jpg" alt="Alex Spencer" width="311" height="346" srcset="img/about-bg-img-human-mobile.jpg 1x, img/about-bg-img-human-mobile.@2xjpg 2x">
-          </picture>
-
-          <div class="about-me__box" id="about">
-            <h2 class="about__head">About me</h2>
-            <p class="about__info">I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.</p>
-            <a class="about__link" href="portfoio.html">Go to portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="projects">
-      <div class="container">
-        <div class="project-content">
-          <h2 class="projects__title">Interested in doing a project together?</h2>
-        <a class="about__link project--link" href="contact.html">Contact me</a>
-        </div>
-      </div>
-    </div>
-  </main>
 
   <footer class="site-footer">
     <div class="container">
